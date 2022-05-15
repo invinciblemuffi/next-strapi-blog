@@ -6,6 +6,8 @@ export async function fetchRestaurants(path: string) {
         'Content-Type': 'application/json',
       },
     });
+    // const resp= await fetch('http://localhost:1337/api/categories')
+    console.log("resp",resp)
     const respJSON = await resp.json();
     return respJSON.data
   } catch (error) {
